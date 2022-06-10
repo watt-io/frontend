@@ -1,0 +1,258 @@
+
+/* @@@@@@@@@@@@@@@@@@ CONFIGURACOES GERAIS @@@@@@@@@@@@@@@@@ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --blue: #037cf5;
+    --white: #ffffff;
+    --yellow: #F7F707;
+    --laranja: orangered;
+    --azulclaro: #6adcf0;
+}
+
+*{
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    min-height: 100%;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+body{
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+}
+
+.wrapper {
+    width: min(50rem,100%);
+    margin-inline: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#raio {
+    display: flex;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+/* @@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@ */
+
+header{
+    text-align: center;
+}
+
+header h1{
+    text-align: center;
+
+    color: var(--blue);
+
+    margin-top: 7vh;
+}
+
+header h1 span{
+    color: var(--yellow);
+    font-weight: bolder;
+}
+
+h1 span{
+    color: var(--yellow);
+
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header p{
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  color: var(--white);
+
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+#barra{
+    height: 2rem;
+
+    font-size: 3rem;
+}
+
+header input{
+    color: var(--laranja);
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 2.4rem;
+
+
+    width: 12rem;
+    height: 5rem;
+    margin-top: 2rem;
+
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+}
+
+header button{
+    border: none;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 2px;
+    background-color: var(--blue);
+
+    color: var(--white);
+
+    height: 2.3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+header button:active{
+    box-shadow: inset 1px 1px 1px 1px black;
+}
+
+/* @@@@@@@@@@@@@@@@@@ OFERTAS @@@@@@@@@@@@@@@@@ */
+
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.oferta{
+    display: none;
+
+    height: 9em;
+    margin: 1rem 0rem;
+    margin-inline: 5vw;
+
+    text-align: center;
+
+    background-image: url(Imagens/c374b256e7554e7674ae097426e30847.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+
+    
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 1px solid black;
+    border: none;
+}
+
+.oferta h1{
+    color: var(--azulclaro);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.oferta p{
+    margin-top: -1rem;
+
+    color: var(--white);
+}
+
+.oferta button{
+    border: none;
+    border-radius: 2px;
+    
+
+    height: 2.3rem;
+    width: 9rem;
+    margin-top: 1rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: var(--white);
+
+    background-color: var(--blue);
+    box-shadow: 0px 0px 2px 1px rgba(252, 252, 252, 0.438);
+}
+
+.oferta button:active{
+    box-shadow: inset 0px 0px 2px 1px rgba(252, 252, 252, 0.438);
+}
+
+.aparecer{
+    display: block;
+}
+
+#resultado{
+    display: none;
+}
+
+#economia1 , #economia2 , #economia3 , #economia4{
+    color: rgb(22, 255, 22);
+    
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+}
+
+/* @@@@@@@@@@@@@@@@ RESPONSIVIDADE @@@@@@@@@@@@@ */
+
+@media (max-width: 640px) {
+
+    .oferta{
+        height: 10rem;
+    }
+
+}
+
+@media (max-width: 475px){
+    #barra{
+        width: 8rem;
+    }
+
+    header input{
+        width: 8rem;
+        font-size: 1.8rem;
+    }
+
+    header h1{
+        font-size: 1.8rem;
+
+    }
+
+    header p{
+        font-size: 1rem;
+        
+    }
+}
+
+@media (max-width: 357px) {
+    header input{
+        width: 6rem;
+        font-size: 1.6rem;
+    }
+
+    header h1{
+        font-size: 1.6rem;
+    }
+
+    header p{
+        font-size: .8rem;
+    }
+}

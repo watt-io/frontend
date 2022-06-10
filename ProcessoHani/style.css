@@ -1,0 +1,93 @@
+/* @@@@@@@@@@@@@@@ CONFIGURACOES GERAIS @@@@@@@@@@@@@@@@@ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+:root {
+  --blue: #037cf5;
+  --white: #ffffff;
+  --yellow: #F7F707;
+}
+
+html{
+  min-height: 100%;
+  height: max-content;
+
+  background-color: rgba(0, 0, 0, 0.808);
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    font-family: 'Roboto', sans-serif;
+}
+  
+#raio {
+  display: flex;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+}
+
+/* @@@@@@@@@@@@@@@ MAIN @@@@@@@@@@@@@@@@@ */
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--blue);
+
+  margin-top: 15vh;
+}
+
+#i{
+  color: var(--yellow);
+}
+
+p{
+  text-align: center;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.2rem;
+
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#lugar{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 4rem;
+}
+
+#but{
+    margin-left: 1rem;
+    
+    border: none;
+    background-color: var(--white);
+    box-shadow: 3px 2px 2px 1px var(--blue);
+}
+
+#but:active{
+    box-shadow: inset 3px 2px 2px 1px var(--blue);
+}
+
+/* @@@@@@@@@@@@@@@ ESCONDER VARIAVEL @@@@@@@@@@@@@@@@@ */
+
+#resultado{
+    display: none;
+}
+

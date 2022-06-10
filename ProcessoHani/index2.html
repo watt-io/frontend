@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InoMarket</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="Imagens/icons8-bolt-60 .png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="wrapper">
+        
+        <aside id="logo"><img id="raio" src="Imagens/icons8-bolt-60 .png" alt=""></aside>
+        <main>
+            <h1 id="tit"></h1>
+            <p>Insira abaixo uma média de quanto voce paga atualmente por mês  </p>
+            <input oninput="mudar()" id="barra" type="range" min="1000" max="100000"  value="0">
+            <input id="valor" type="number" value="1000" >
+            <div id="resultado"></div>
+            <button onclick="aparecer()">OK!</button>
+        </main>
+
+    </header>
+
+    <main class="ofertas wrapper">
+
+        <section id="oferta1" class="oferta">
+            <h1><span>E</span>nerFácil</h1>
+            <p>Você tem um desconto de 20%! Economize um total de <span id="economia1"></span> por ano!<p>
+            <button>ESCOLHER ESSE!</button>
+        </section>
+        <section id="oferta2" class="oferta">
+            <h1><span>E</span>nerLimpa</h1>
+            <p>Você tem um desconto de 10%! Economize um total de <span id="economia2"></span> por ano!<p>
+            <button>ESCOLHER ESSE!</button>
+        </section>
+        <section id="oferta3" class="oferta">
+            <h1><span>E</span>nerGrande</h1>
+            <p>Você tem um desconto de 25%! Economize um total de <span id="economia3"></span> por ano!<p>
+            <button>ESCOLHER ESSE!</button>
+        </section>
+        <section id="oferta4" class="oferta">
+            <h1><span>E</span>nerEmpresa</h1>
+            <p>Você tem um desconto de 30%! Economize um total de <span id="economia4"></span> por ano!<p>
+            <button>ESCOLHER ESSE!</button>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="appfinal.js">
+</script>
+
+</html>
